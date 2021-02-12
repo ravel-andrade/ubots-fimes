@@ -13,4 +13,5 @@ import com.ravel.socialmovies.domain.Review;
 public interface MovieRepository extends MongoRepository<Movie, String> {
 
 	List<Movie> findByReviewsNotIn(List<Review> reviews);
+	
 }

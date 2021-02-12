@@ -35,7 +35,7 @@ public class Instantiation implements CommandLineRunner{
 		sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
 		
 		
-		if(MovieRepository.findAll() == null && MovieRepository.findAll() == null) {
+		if(MovieRepository.findAll().isEmpty() && MovieRepository.findAll().isEmpty()) {
 			User maria = new User(null, "Maria Brown", "maria@gmail.com");
 			User alex = new User(null, "Alex Green", "alex@gmail.com");
 			User bob = new User(null, "Bob Grey", "bob@gmail.com");
